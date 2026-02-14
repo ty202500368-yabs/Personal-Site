@@ -107,24 +107,8 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Add typing effect to hero title (optional enhancement)
-const heroTitle = document.querySelector('.hero-title');
-if (heroTitle) {
-    const originalText = heroTitle.innerHTML;
-    heroTitle.innerHTML = '';
-    let charIndex = 0;
-    
-    function typeWriter() {
-        if (charIndex < originalText.length) {
-            heroTitle.innerHTML += originalText.charAt(charIndex);
-            charIndex++;
-            setTimeout(typeWriter, 50);
-        }
-    }
-    
-    // Start typing effect after a short delay
-    setTimeout(typeWriter, 500);
-}
+// Hero title is rendered normally without typing effect
+// to preserve HTML structure and styling
 
 // Add parallax effect to hero section
 const hero = document.querySelector('.hero');
